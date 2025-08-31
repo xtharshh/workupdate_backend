@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     "corsheaders",
     'rest_framework',
     'rest_framework.authtoken',
-    'updates',
+    'updates',    
 ]
 
 MIDDLEWARE = [
@@ -56,6 +56,7 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'apex_backend.urls'
+AUTH_USER_MODEL = "updates.CustomUser"
 
 TEMPLATES = [
     {
